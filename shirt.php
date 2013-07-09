@@ -34,7 +34,7 @@ include('includes/header.php'); ?>
 					<h1><span class="price">$<?php echo $product["price"]; ?></span> <?php echo $product["name"]; ?></h1>
 
 					<form target="paypal" action="#" method="post">
-						<input type="hidden" name="cmd" value="_s-xclick">
+						<!-- removed pp hidden input -->
 						<input type="hidden" name="hosted_button_id" value="<?php echo $product["paypal"]; ?>">
 						<input type="hidden" name="item_name" value="<?php echo $product["name"]; ?>">
 						<table>
